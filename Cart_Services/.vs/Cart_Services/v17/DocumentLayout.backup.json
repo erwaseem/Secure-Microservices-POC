@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\Cart_Services\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{17FED03F-E828-45CF-8063-3C6D7F20900B}|Cart_Services\\Cart_Services.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\cart_services\\cart_services\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17FED03F-E828-45CF-8063-3C6D7F20900B}|Cart_Services\\Cart_Services.csproj|solutionrelative:cart_services\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FED03F-E828-45CF-8063-3C6D7F20900B}|Cart_Services\\Cart_Services.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\cart_services\\cart_services\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17FED03F-E828-45CF-8063-3C6D7F20900B}|Cart_Services\\Cart_Services.csproj|solutionrelative:cart_services\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FED03F-E828-45CF-8063-3C6D7F20900B}|Cart_Services\\Cart_Services.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\cart_services\\cart_services\\domain\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17FED03F-E828-45CF-8063-3C6D7F20900B}|Cart_Services\\Cart_Services.csproj|solutionrelative:cart_services\\domain\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FED03F-E828-45CF-8063-3C6D7F20900B}|Cart_Services\\Cart_Services.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\cart_services\\cart_services\\infrastructure\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17FED03F-E828-45CF-8063-3C6D7F20900B}|Cart_Services\\Cart_Services.csproj|solutionrelative:cart_services\\infrastructure\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FED03F-E828-45CF-8063-3C6D7F20900B}|Cart_Services\\Cart_Services.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\cart_services\\cart_services\\infrastructure\\data\\cartdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17FED03F-E828-45CF-8063-3C6D7F20900B}|Cart_Services\\Cart_Services.csproj|solutionrelative:cart_services\\infrastructure\\data\\cartdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\Cart_Services\\Cart_Services\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Cart_Services\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\Cart_Services\\Cart_Services\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Cart_Services\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAewCQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T16:33:07.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\Cart_Services\\Cart_Services\\Domain\\Entities\\CartItem.cs",
+              "RelativeDocumentMoniker": "Cart_Services\\Domain\\Entities\\CartItem.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\Cart_Services\\Cart_Services\\Domain\\Entities\\CartItem.cs",
+              "RelativeToolTip": "Cart_Services\\Domain\\Entities\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T06:48:40.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\Cart_Services\\Cart_Services\\Infrastructure\\Repositories\\CartRepository.cs",
+              "RelativeDocumentMoniker": "Cart_Services\\Infrastructure\\Repositories\\CartRepository.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\Cart_Services\\Cart_Services\\Infrastructure\\Repositories\\CartRepository.cs",
+              "RelativeToolTip": "Cart_Services\\Infrastructure\\Repositories\\CartRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T06:48:29.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartDb.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\Cart_Services\\Cart_Services\\Infrastructure\\Data\\CartDb.cs",
+              "RelativeDocumentMoniker": "Cart_Services\\Infrastructure\\Data\\CartDb.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\Cart_Services\\Cart_Services\\Infrastructure\\Data\\CartDb.cs",
+              "RelativeToolTip": "Cart_Services\\Infrastructure\\Data\\CartDb.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T06:48:24.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\Cart_Services\\Cart_Services\\appsettings.json",
+              "RelativeDocumentMoniker": "Cart_Services\\appsettings.json",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\Cart_Services\\Cart_Services\\appsettings.json",
+              "RelativeToolTip": "Cart_Services\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-10T06:42:51.129Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

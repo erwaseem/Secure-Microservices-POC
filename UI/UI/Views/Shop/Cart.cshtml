@@ -1,0 +1,196 @@
+@model UI.Models.CartViewModel
+@{
+    ViewData["Title"] = "My Cart";
+    int itemCount = Model.TotalItems;
+}
+
+@* ─── Breadcrumb ──────────────────────────────────────────────────────────── *@
+<div class="cart-breadcrumb">
+    <div class="container-fluid px-4">
+        <a asp-controller="Shop" asp-action="Index">Shop</a>
+        <span class="mx-1 text-muted">/</span>
+        <strong>My Cart</strong>
+        @if (itemCount > 0)
+        {
+            <span class="ms-2 text-muted">(@itemCount item@(itemCount > 1 ? "s" : ""))</span>
+        }
+    </div>
+</div>
+
+@* ─── Checkout step indicator ─────────────────────────────────────────────── *@
+<div class="order-steps" role="navigation" aria-label="Checkout steps">
+    <div class="step active" aria-current="step">
+        <span class="step-num">1</span> Cart
+    </div>
+    <div class="step-sep"></div>
+    <div class="step">
+        <span class="step-num">2</span> Address
+    </div>
+    <div class="step-sep"></div>
+    <div class="step">
+        <span class="step-num">3</span> Payment
+    </div>
+    <div class="step-sep"></div>
+    <div class="step">
+        <span class="step-num">4</span> Summary
+    </div>
+</div>
+
+@* ─── Toast notification (from TempData) ─────────────────────────────────── *@
+@if (TempData["ToastMessage"] is string toastMsg)
+{
+    <div class="shop-toast" role="status" id="shopToast">@toastMsg</div>
+    <script>
+        setTimeout(function () {
+            var el = document.getElementById('shopToast');
+            if (el) { el.remove(); }
+        }, 2800);
+    </script>
+}
+
+@* ─── Page body ───────────────────────────────────────────────────────────── *@
+<div class="container-fluid px-3 px-md-4 mt-3">
+
+    @* ─── Order success banner ────────────────────────────────────────────── *@
+    @if (TempData["OrderSuccess"] is true)
+    {
+        <div class="order-success" role="alert">
+            <div style="font-size:56px">&#9989;</div>
+            <h4>Order Placed Successfully!</h4>
+            <p>Thank you for shopping with us. Your order is being processed.</p>
+            <a asp-controller="Shop" asp-action="Index" class="btn btn-success mt-2">
+                Continue Shopping
+            </a>
+        </div>
+    }
+
+    @* ─── Empty cart ──────────────────────────────────────────────────────── *@
+    @if (!Model.Items.Any() && TempData["OrderSuccess"] is not true)
+    {
+        <div class="empty-cart" role="status">
+            <div style="font-size:80px;color:#ddd">&#128722;</div>
+            <h4>Your cart is empty!</h4>
+            <p>Looks like you haven't added anything yet.</p>
+            <a asp-controller="Shop" asp-action="Index" class="btn btn-primary btn-lg px-5">
+                Start Shopping
+            </a>
+        </div>
+    }
+
+    @* ─── Cart items + order summary ──────────────────────────────────────── *@
+    @if (Model.Items.Any())
+    {
+        <div class="row g-3 align-items-start">
+
+            @* Cart item list *@
+            <section class="col-12 col-lg-8" aria-label="Cart items">
+
+                @foreach (var item in Model.Items)
+                {
+                    <div class="cart-item-card">
+                        <div class="row g-3 align-items-center">
+
+                            @* Product image *@
+                            <div class="col-auto">
+                                <img class="cart-img"
+                                     src="@item.ImageUrl"
+                                     alt="@item.Name"
+                                     onerror="this.src='https://via.placeholder.com/88?text=P'" />
+                            </div>
+
+                            @* Product info *@
+                            <div class="col">
+                                <div class="cart-item-brand">@item.Brand</div>
+                                <div class="cart-item-name">@item.Name</div>
+
+                                <div class="d-flex align-items-baseline gap-2 mt-2 flex-wrap">
+                                    <span class="cart-item-price">&#8377;@item.Price.ToString("N0")</span>
+                                    <span class="cart-item-original">&#8377;@item.OriginalPrice.ToString("N0")</span>
+                                    <span class="cart-item-saving">&#8377;@((item.OriginalPrice - item.Price).ToString("N0")) saved</span>
+                                </div>
+
+                                @* Quantity stepper *@
+                                <div class="d-flex align-items-center gap-3 mt-3 flex-wrap">
+                                    <div class="qty-wrap" role="group" aria-label="Quantity for @item.Name">
+                                        <form asp-action="UpdateQuantity" method="post" class="d-inline">
+                                            @Html.AntiForgeryToken()
+                                            <input type="hidden" name="productId" value="@item.ProductId.ToString()" />
+                                            <input type="hidden" name="delta"     value="-1" />
+                                            <button type="submit" class="qty-btn" aria-label="Decrease quantity">&#8722;</button>
+                                        </form>
+
+                                        <div class="qty-display" aria-label="Current quantity">@item.Quantity</div>
+
+                                        <form asp-action="UpdateQuantity" method="post" class="d-inline">
+                                            @Html.AntiForgeryToken()
+                                            <input type="hidden" name="productId" value="@item.ProductId.ToString()" />
+                                            <input type="hidden" name="delta"     value="1" />
+                                            <button type="submit" class="qty-btn" aria-label="Increase quantity">+</button>
+                                        </form>
+                                    </div>
+
+                                    @* Remove item *@
+                                    <form asp-action="RemoveItem" method="post" class="d-inline">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="productId" value="@item.ProductId.ToString()" />
+                                        <button type="submit" class="btn-remove"
+                                                aria-label="Remove @item.Name from cart">Remove</button>
+                                    </form>
+                                </div>
+
+                                <small class="text-success fw-semibold mt-2 d-block">
+                                    &#10004; Line Total: &#8377;@item.LineTotal.ToString("N0")
+                                </small>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+
+                <a asp-controller="Shop" asp-action="Index" class="btn btn-outline-primary btn-sm mt-1">
+                    &#8592; Continue Shopping
+                </a>
+            </section>
+
+            @* Order summary sidebar *@
+            <aside class="col-12 col-lg-4" aria-label="Order summary">
+                <div class="summary-card">
+                    <h5>Price Details</h5>
+
+                    <div class="summary-row">
+                        <span>Price (@Model.TotalItems item@(Model.TotalItems > 1 ? "s" : ""))</span>
+                        <span>&#8377;@Model.SubTotal.ToString("N0")</span>
+                    </div>
+                    <div class="summary-row disc">
+                        <span>Discount</span>
+                        <span>&minus; &#8377;@Model.TotalDiscount.ToString("N0")</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery Charges</span>
+                        <span class="text-success fw-semibold">FREE</span>
+                    </div>
+
+                    <div class="summary-total">
+                        <span>Total Amount</span>
+                        <span>&#8377;@Model.GrandTotal.ToString("N0")</span>
+                    </div>
+
+                    <div class="savings-tag" role="status">
+                        &#127881; You save &#8377;@Model.TotalDiscount.ToString("N0") on this order!
+                    </div>
+
+                    <form asp-action="PlaceOrder" method="post">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn-checkout">Place Order</button>
+                    </form>
+
+                    <p class="text-center text-muted mt-2 mb-0" style="font-size:12px">
+                        &#128276; Safe and Secure Payments
+                    </p>
+                </div>
+            </aside>
+
+        </div>
+    }
+
+</div>

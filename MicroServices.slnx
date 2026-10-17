@@ -1,0 +1,22 @@
+<Solution>
+  <Folder Name="/API-Gatway/" />
+  <Folder Name="/API-Gatway/API-Gatway/">
+    <Project Path="API-Gatway/API-Gatway/API-Gatway/API-Gatway.csproj" />
+  </Folder>
+  <Folder Name="/Auth-Service/" />
+  <Folder Name="/Auth-Service/Auth/">
+    <Project Path="Auth-Service/Auth/Auth/Auth.csproj" />
+  </Folder>
+  <Folder Name="/Cart_Services/">
+    <Project Path="Cart_Services/Cart_Services/Cart_Services.csproj" />
+  </Folder>
+  <Folder Name="/ProductService/" />
+  <Folder Name="/ProductService/ProductService/">
+    <Project Path="ProductService/ProductService/ProductService/ProductService.csproj" />
+  </Folder>
+  <Folder Name="/UI/">
+    <Project Path="UI/UI/UI.csproj" />
+  </Folder>
+  <Project Path="NotificationService/NotificationService.csproj" />
+  <Project Path="Shared/Shared.csproj" />
+</Solution>

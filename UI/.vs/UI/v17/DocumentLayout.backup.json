@@ -1,0 +1,252 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\services\\productcatalogueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\services\\productcatalogueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\services\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\services\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\services\\iproductcatalogueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\services\\iproductcatalogueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\ui\\ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C91A1CA0-E2A0-49C5-9631-D7BAD6C81A9E}|UI\\UI.csproj|solutionrelative:ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Views\\Shop\\Index.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\Shop\\Index.cshtml",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Views\\Shop\\Index.cshtml",
+              "RelativeToolTip": "UI\\Views\\Shop\\Index.cshtml",
+              "ViewState": "AgIAABgBAAAAAAAAAAAAAHoBAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-15T07:21:16.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Program.cs",
+              "RelativeDocumentMoniker": "UI\\Program.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Program.cs",
+              "RelativeToolTip": "UI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T07:18:35.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "UI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T15:32:08.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductCatalogueService.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Services\\ProductCatalogueService.cs",
+              "RelativeDocumentMoniker": "UI\\Services\\ProductCatalogueService.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Services\\ProductCatalogueService.cs",
+              "RelativeToolTip": "UI\\Services\\ProductCatalogueService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T06:46:02.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\appsettings.json",
+              "RelativeDocumentMoniker": "UI\\appsettings.json",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\appsettings.json",
+              "RelativeToolTip": "UI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-10T06:46:36.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Controllers\\ShopController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\ShopController.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Controllers\\ShopController.cs",
+              "RelativeToolTip": "UI\\Controllers\\ShopController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAuwDoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T06:12:14.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Models\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "UI\\Models\\ProductViewModel.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Models\\ProductViewModel.cs",
+              "RelativeToolTip": "UI\\Models\\ProductViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T06:29:54.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "UI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T06:05:36.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CommentService.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Services\\CommentService.cs",
+              "RelativeDocumentMoniker": "UI\\Services\\CommentService.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Services\\CommentService.cs",
+              "RelativeToolTip": "UI\\Services\\CommentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T07:20:55.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IProductCatalogueService.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Services\\IProductCatalogueService.cs",
+              "RelativeDocumentMoniker": "UI\\Services\\IProductCatalogueService.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Services\\IProductCatalogueService.cs",
+              "RelativeToolTip": "UI\\Services\\IProductCatalogueService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T06:17:23.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "UI\\Services\\CartService.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Services\\CartService.cs",
+              "RelativeToolTip": "UI\\Services\\CartService.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T06:17:19.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ICartService.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Services\\ICartService.cs",
+              "RelativeDocumentMoniker": "UI\\Services\\ICartService.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Services\\ICartService.cs",
+              "RelativeToolTip": "UI\\Services\\ICartService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T06:17:24.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "UI\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-09T06:15:51.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\UI\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "UI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-09T06:05:33.087Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

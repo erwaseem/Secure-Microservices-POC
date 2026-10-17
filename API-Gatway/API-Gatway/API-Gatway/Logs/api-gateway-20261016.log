@@ -1,0 +1,41 @@
+2026-10-16 17:01:45 [INF] Yarp.ReverseProxy.Configuration.ConfigProvider.ConfigurationConfigProvider Loading proxy data from config.
+2026-10-16 17:01:47 [WRN] Microsoft.AspNetCore.Server.Kestrel Overriding address(es) 'http://localhost:5020'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-10-16 17:01:53 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET / responded 200 in 393.1179 ms
+2026-10-16 17:01:54 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /favicon.ico responded 404 in 9.5892 ms
+2026-10-16 17:02:18 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Proxying to http://localhost:5001/auth/Auth/login HTTP/2 RequestVersionOrLower 
+2026-10-16 17:02:18 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /auth/Auth/login responded 400 in 70.4342 ms
+2026-10-16 17:02:18 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Proxying to http://localhost:5001/auth/Auth/login HTTP/2 RequestVersionOrLower 
+2026-10-16 17:02:18 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /auth/Auth/login responded 400 in 51.1453 ms
+2026-10-16 17:02:18 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Proxying to http://localhost:5001/auth/Auth/login HTTP/2 RequestVersionOrLower 
+2026-10-16 17:02:19 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /auth/Auth/login responded 400 in 133.2256 ms
+2026-10-16 17:02:19 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Proxying to http://localhost:5001/auth/Auth/login HTTP/2 RequestVersionOrLower 
+2026-10-16 17:02:19 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /auth/Auth/login responded 400 in 68.2391 ms
+2026-10-16 17:02:19 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Proxying to http://localhost:5001/auth/Auth/login HTTP/2 RequestVersionOrLower 
+2026-10-16 17:02:19 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /auth/Auth/login responded 400 in 127.6225 ms
+2026-10-16 17:02:19 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /auth/Auth/login responded 429 in 4.5952 ms
+2026-10-16 17:02:30 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /auth/Auth/login responded 429 in 0.5654 ms
+2026-10-16 17:02:40 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /auth/Auth/login responded 429 in 0.3917 ms
+2026-10-16 17:02:48 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /auth/Auth/login responded 429 in 0.3489 ms
+2026-10-16 17:03:54 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Proxying to http://localhost:5001/auth/Auth/login HTTP/2 RequestVersionOrLower 
+2026-10-16 17:03:55 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Received HTTP/1.1 response 200.
+2026-10-16 17:03:55 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /auth/Auth/login responded 200 in 212.0906 ms
+2026-10-16 17:03:55 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Proxying to http://localhost:5138/api/Products HTTP/2 RequestVersionOrLower 
+2026-10-16 17:03:56 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Received HTTP/1.1 response 200.
+2026-10-16 17:03:56 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/Products responded 200 in 858.4793 ms
+2026-10-16 17:03:56 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Proxying to http://localhost:5164/api/Cart/1247463d-38ce-a23a-3315-594bc734f3f8 HTTP/2 RequestVersionOrLower 
+2026-10-16 17:03:57 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Received HTTP/1.1 response 200.
+2026-10-16 17:03:57 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/Cart/1247463d-38ce-a23a-3315-594bc734f3f8 responded 200 in 1277.0009 ms
+2026-10-16 17:04:01 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Proxying to http://localhost:5138/api/Products/11111111-0005-0005-0005-000000000005 HTTP/2 RequestVersionOrLower 
+2026-10-16 17:04:02 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Received HTTP/1.1 response 200.
+2026-10-16 17:04:02 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/Products/11111111-0005-0005-0005-000000000005 responded 200 in 564.4812 ms
+2026-10-16 17:04:02 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Proxying to http://localhost:5164/api/Cart/1247463d-38ce-a23a-3315-594bc734f3f8/items HTTP/2 RequestVersionOrLower 
+2026-10-16 17:04:02 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Received HTTP/1.1 response 200.
+2026-10-16 17:04:02 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /api/Cart/1247463d-38ce-a23a-3315-594bc734f3f8/items responded 200 in 538.8483 ms
+2026-10-16 17:04:03 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Proxying to http://localhost:5164/api/Cart/1247463d-38ce-a23a-3315-594bc734f3f8 HTTP/2 RequestVersionOrLower 
+2026-10-16 17:04:03 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Received HTTP/1.1 response 200.
+2026-10-16 17:04:03 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/Cart/1247463d-38ce-a23a-3315-594bc734f3f8 responded 200 in 44.1173 ms
+2026-10-16 17:04:21 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Proxying to http://localhost:5164/api/Cart/1247463d-38ce-a23a-3315-594bc734f3f8 HTTP/2 RequestVersionOrLower 
+2026-10-16 17:04:51 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP DELETE /api/Cart/1247463d-38ce-a23a-3315-594bc734f3f8 responded 400 in 30008.8385 ms
+2026-10-16 17:04:51 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Proxying to http://localhost:5164/api/Cart/1247463d-38ce-a23a-3315-594bc734f3f8 HTTP/2 RequestVersionOrLower 
+2026-10-16 17:04:51 [INF] Yarp.ReverseProxy.Forwarder.HttpForwarder Received HTTP/1.1 response 200.
+2026-10-16 17:04:51 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /api/Cart/1247463d-38ce-a23a-3315-594bc734f3f8 responded 200 in 39.6381 ms

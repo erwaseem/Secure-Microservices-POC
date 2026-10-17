@@ -1,0 +1,35 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "NotificationService\\NotificationService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Shared\\Shared.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "API-Gatway\\API-Gatway\\API-Gatway\\API-Gatway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Auth-Service\\Auth\\Auth\\Auth.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Cart_Services\\Cart_Services\\Cart_Services.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ProductService\\ProductService\\ProductService\\ProductService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "UI\\UI\\UI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

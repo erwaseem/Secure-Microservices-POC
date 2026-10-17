@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\API-Gatway\\API-Gatway\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7B8FBEDD-77CC-462B-BCDE-79BB0315984B}|API-Gatway\\API-Gatway.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\api-gatway\\api-gatway\\api-gatway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B8FBEDD-77CC-462B-BCDE-79BB0315984B}|API-Gatway\\API-Gatway.csproj|solutionrelative:api-gatway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B8FBEDD-77CC-462B-BCDE-79BB0315984B}|API-Gatway\\API-Gatway.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\api-gatway\\api-gatway\\api-gatway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7B8FBEDD-77CC-462B-BCDE-79BB0315984B}|API-Gatway\\API-Gatway.csproj|solutionrelative:api-gatway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B8FBEDD-77CC-462B-BCDE-79BB0315984B}|API-Gatway\\API-Gatway.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\api-gatway\\api-gatway\\api-gatway\\api-gatway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7B8FBEDD-77CC-462B-BCDE-79BB0315984B}|API-Gatway\\API-Gatway.csproj|solutionrelative:api-gatway\\api-gatway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 256,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "API-Gatway.csproj",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\API-Gatway\\API-Gatway\\API-Gatway\\API-Gatway.csproj",
+              "RelativeDocumentMoniker": "API-Gatway\\API-Gatway.csproj",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\API-Gatway\\API-Gatway\\API-Gatway\\API-Gatway.csproj",
+              "RelativeToolTip": "API-Gatway\\API-Gatway.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-03T07:46:10.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\API-Gatway\\API-Gatway\\API-Gatway\\Program.cs",
+              "RelativeDocumentMoniker": "API-Gatway\\Program.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\API-Gatway\\API-Gatway\\API-Gatway\\Program.cs",
+              "RelativeToolTip": "API-Gatway\\Program.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAFsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T07:35:44.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\API-Gatway\\API-Gatway\\API-Gatway\\appsettings.json",
+              "RelativeDocumentMoniker": "API-Gatway\\appsettings.json",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\API-Gatway\\API-Gatway\\API-Gatway\\appsettings.json",
+              "RelativeToolTip": "API-Gatway\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-03T07:35:30.488Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

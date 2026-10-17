@@ -1,0 +1,148 @@
+================================================================================
+  HOW THE MICROSERVICES FLOW WORKS
+================================================================================
+
+SERVICES & PORTS
+----------------
+  UI             → http://localhost:5168   (ASP.NET Core MVC frontend)
+  API Gateway    → http://localhost:5020   (YARP Reverse Proxy)
+  ProductService → http://localhost:5138   (Products API + SQL Server)
+  Cart_Services  → http://localhost:5164   (Cart API + SQL Server)
+
+================================================================================
+
+STEP-BY-STEP FLOW
+-----------------
+
+STEP 1 — User opens the browser
+  Browser hits: http://localhost:5168/Shop
+  UI (5168) receives the request in ShopController.Index()
+
+STEP 2 — UI asks API Gateway for products
+  UI (5168)  -->  API Gateway (5020)  -->  ProductService (5138)
+  GET http://localhost:5020/api/Products
+  API Gateway matches route "products-route" and forwards to ProductService.
+  ProductService reads from SQL Server (SecureProductDb) and returns JSON list.
+
+STEP 3 — UI renders the product grid
+  API Gateway returns the product JSON back to UI (5168).
+  ShopController passes the list to Views/Shop/Index.cshtml.
+  The page displays product cards with name, price, rating, badge, etc.
+
+STEP 4 — User adds a product to cart (clicks "+ Cart")
+  Browser posts to: http://localhost:5168/Shop/AddToCart
+  ShopController calls:
+    (a) GET  http://localhost:5020/api/Products/{id}        (fetch product details)
+    (b) POST http://localhost:5020/api/Cart/{sessionId}/items  (add item to cart)
+  API Gateway forwards (a) to ProductService (5138).
+  API Gateway forwards (b) to Cart_Services (5164).
+  Cart_Services saves the item in SQL Server (CartServiceDb) and returns updated cart.
+
+STEP 5 — Cart count updates in the header
+  Every time the Shop page loads, UI calls:
+    GET http://localhost:5020/api/Cart/{sessionId}
+  API Gateway forwards to Cart_Services (5164).
+  Cart_Services returns the cart JSON including TotalItems.
+  UI displays TotalItems in the cart bubble on the top bar.
+
+STEP 6 — User views the cart (clicks "Cart")
+  Browser hits: http://localhost:5168/Shop/Cart
+  ShopController calls:
+    GET http://localhost:5020/api/Cart/{sessionId}
+  API Gateway forwards to Cart_Services (5164).
+  Cart_Services returns all cart items, subtotal, discount, grand total.
+  Cart.cshtml renders the full cart page.
+
+STEP 7 — User updates quantity (clicks + or -)
+  Browser posts to: http://localhost:5168/Shop/UpdateQuantity
+  ShopController calls:
+    PATCH http://localhost:5020/api/Cart/{sessionId}/items
+  API Gateway forwards to Cart_Services (5164).
+  Cart_Services updates the quantity in CartServiceDb.
+  If quantity reaches 0, the item is automatically removed.
+
+STEP 8 — User removes an item
+  Browser posts to: http://localhost:5168/Shop/RemoveItem
+  ShopController calls:
+    DELETE http://localhost:5020/api/Cart/{sessionId}/items/{productId}
+  API Gateway forwards to Cart_Services (5164).
+  Cart_Services deletes the CartItem row from CartServiceDb.
+
+STEP 9 — User places the order
+  Browser posts to: http://localhost:5168/Shop/PlaceOrder
+  ShopController calls:
+    DELETE http://localhost:5020/api/Cart/{sessionId}
+  API Gateway forwards to Cart_Services (5164).
+  Cart_Services clears all items for that session cart.
+  UI shows the "Order Placed Successfully!" banner.
+
+================================================================================
+
+VISUAL FLOW DIAGRAM
+-------------------
+
+  Browser
+    |
+    v
+  UI  (5168)
+    |
+    |-- GET  /api/Products           -->  API Gateway (5020)
+    |-- GET  /api/Products/{id}      -->  API Gateway (5020)
+    |-- POST /api/Products/seed      -->  API Gateway (5020)
+    |-- GET  /api/Cart/{sid}         -->  API Gateway (5020)
+    |-- POST /api/Cart/{sid}/items   -->  API Gateway (5020)
+    |-- PATCH /api/Cart/{sid}/items  -->  API Gateway (5020)
+    |-- DELETE /api/Cart/{sid}/items/{pid}  --> API Gateway (5020)
+    |-- DELETE /api/Cart/{sid}       -->  API Gateway (5020)
+                                              |
+                              +---------------+---------------+
+                              |                               |
+                      /api/Products/*                  /api/Cart/*
+                              |                               |
+                              v                               v
+                   ProductService (5138)           Cart_Services (5164)
+                   DB: SecureProductDb             DB: CartServiceDb
+                   Table: Products                 Tables: Carts, CartItems
+
+================================================================================
+
+RULE: UI NEVER CALLS MICROSERVICES DIRECTLY.
+      ALL REQUESTS GO THROUGH THE API GATEWAY.
+================================================================================
+
+SESSION & IDENTITY
+------------------
+  The ASP.NET Core session ID (a unique cookie per browser tab session) is used
+  as the cart identifier.  Cart_Services stores one Cart row per session ID,
+  so each browser session has its own isolated cart without requiring login.
+
+================================================================================
+
+DATABASES
+---------
+  SecureProductDb  (SQL Server)
+    Tables:
+      Products  — Id (PK), Sku (unique), Name, Brand, Category, Price,
+                  OriginalPrice, Rating, ReviewCount, ImageUrl, Badge,
+                  IsNew, CreatedUtc
+
+  CartServiceDb  (SQL Server)
+    Tables:
+      Carts      — Id (PK), SessionId (unique), CreatedUtc, UpdatedUtc
+      CartItems  — Id (PK), CartId (FK→Carts, cascade delete),
+                   ProductId, Name, Brand, Price, OriginalPrice,
+                   ImageUrl, Quantity
+
+================================================================================
+
+STARTUP ORDER
+-------------
+  1. dotnet run  ProductService   (port 5138) — migrates SecureProductDb
+  2. dotnet run  Cart_Services    (port 5164) — migrates CartServiceDb
+  3. dotnet run  API-Gateway      (port 5020) — starts reverse proxy
+  4. dotnet run  UI               (port 5168) — frontend ready
+
+  Seed products (run once):
+    POST http://localhost:5020/api/Products/seed
+
+================================================================================

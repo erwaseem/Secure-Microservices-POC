@@ -1,0 +1,321 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\infrastructure\\data\\productdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\infrastructure\\data\\productdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\migrations\\productdbmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\migrations\\productdbmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\infrastructure\\repositories\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\infrastructure\\repositories\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\domain\\entities\\productcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\domain\\entities\\productcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\productservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\productservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\productservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\productservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\contracts\\productcreated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\contracts\\productcreated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\application\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\application\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|c:\\users\\waseem.ahmad\\onedrive - protiviti member firm\\desktop\\test\\ui\\microservices\\productservice\\productservice\\productservice\\application\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12488B-549F-4094-AA36-8E5A2D562FB2}|ProductService\\ProductService.csproj|solutionrelative:productservice\\application\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 256,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductDbModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Migrations\\ProductDbModelSnapshot.cs",
+              "RelativeDocumentMoniker": "ProductService\\Migrations\\ProductDbModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Migrations\\ProductDbModelSnapshot.cs",
+              "RelativeToolTip": "ProductService\\Migrations\\ProductDbModelSnapshot.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T07:13:48.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductDb.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Infrastructure\\Data\\ProductDb.cs",
+              "RelativeDocumentMoniker": "ProductService\\Infrastructure\\Data\\ProductDb.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Infrastructure\\Data\\ProductDb.cs",
+              "RelativeToolTip": "ProductService\\Infrastructure\\Data\\ProductDb.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T06:50:47.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EfRepository.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Infrastructure\\Repositories\\EfRepository.cs",
+              "RelativeDocumentMoniker": "ProductService\\Infrastructure\\Repositories\\EfRepository.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Infrastructure\\Repositories\\EfRepository.cs",
+              "RelativeToolTip": "ProductService\\Infrastructure\\Repositories\\EfRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T06:50:51.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\appsettings.json",
+              "RelativeDocumentMoniker": "ProductService\\appsettings.json",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\appsettings.json",
+              "RelativeToolTip": "ProductService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-03T07:21:15.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ProductService\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ProductService\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAIwBkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T07:48:43.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "ProductService\\Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "ProductService\\Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T06:51:00.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "ProductService\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\WeatherForecast.cs",
+              "RelativeToolTip": "ProductService\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T07:13:47.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "ProductService\\Infrastructure\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "ProductService\\Infrastructure\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T06:50:52.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Infrastructure\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "ProductService\\Infrastructure\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Infrastructure\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "ProductService\\Infrastructure\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T06:50:54.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductComment.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Domain\\Entities\\ProductComment.cs",
+              "RelativeDocumentMoniker": "ProductService\\Domain\\Entities\\ProductComment.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Domain\\Entities\\ProductComment.cs",
+              "RelativeToolTip": "ProductService\\Domain\\Entities\\ProductComment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T07:26:46.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "ProductService\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "ProductService\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T07:13:30.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "ProductService\\Controllers\\CommentsController.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "ProductService\\Controllers\\CommentsController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwCQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T07:13:21.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Program.cs",
+              "RelativeDocumentMoniker": "ProductService\\Program.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Program.cs",
+              "RelativeToolTip": "ProductService\\Program.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAEMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T07:20:36.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductService.http",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\ProductService.http",
+              "RelativeDocumentMoniker": "ProductService\\ProductService.http",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\ProductService.http",
+              "RelativeToolTip": "ProductService\\ProductService.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-10-10T06:54:10.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Application\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "ProductService\\Application\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Application\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "ProductService\\Application\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T09:38:02.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Application\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "ProductService\\Application\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Application\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "ProductService\\Application\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T09:34:38.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductCreated.cs",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Contracts\\ProductCreated.cs",
+              "RelativeDocumentMoniker": "ProductService\\Contracts\\ProductCreated.cs",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\Contracts\\ProductCreated.cs",
+              "RelativeToolTip": "ProductService\\Contracts\\ProductCreated.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T09:43:24.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductService.csproj",
+              "DocumentMoniker": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\ProductService.csproj",
+              "RelativeDocumentMoniker": "ProductService\\ProductService.csproj",
+              "ToolTip": "C:\\Users\\waseem.ahmad\\OneDrive - Protiviti Member Firm\\Desktop\\Test\\UI\\MicroServices\\ProductService\\ProductService\\ProductService\\ProductService.csproj",
+              "RelativeToolTip": "ProductService\\ProductService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-03T09:41:07.559Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

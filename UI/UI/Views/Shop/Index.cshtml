@@ -1,0 +1,422 @@
+@model List<UI.Models.ProductViewModel>
+@{
+    ViewData["Title"] = "Shop";
+
+    string currentCat    = ViewBag.Category ?? "all";
+    string currentSort   = ViewBag.Sort     ?? "popular";
+    string currentSearch = ViewBag.Search   ?? string.Empty;
+
+    var categories = new (string Value, string Label)[]
+    {
+        ("all",         "All"),
+        ("electronics", "Electronics"),
+        ("fashion",     "Fashion"),
+        ("home",        "Home & Kitchen"),
+        ("sports",      "Sports"),
+        ("books",       "Books"),
+        ("toys",        "Toys"),
+    };
+
+    var sortOptions = new (string Value, string Label)[]
+    {
+        ("popular",    "Popularity"),
+        ("price_asc",  "Price – Low to High"),
+        ("price_desc", "Price – High to Low"),
+        ("rating",     "Top Rated"),
+    };
+}
+
+@* ── Search bar + cart link ─────────────────────────────────────────────── *@
+<div class="shop-topbar">
+    <div class="container-fluid px-4">
+        <div class="row align-items-center g-2">
+            <div class="col">
+                <form method="get" asp-action="Index" class="search-wrap">
+                    <input type="hidden" name="category" value="@currentCat" />
+                    <input type="hidden" name="sort"     value="@currentSort" />
+                    <input type="text"   name="search"   value="@currentSearch"
+                           placeholder="Search products, brands…" autocomplete="off" />
+                    <button type="submit" class="btn-search" aria-label="Search">&#128269;</button>
+                </form>
+            </div>
+            <div class="col-auto">
+                <a asp-action="Cart" class="cart-badge-link" aria-label="View cart">
+                    &#128722; Cart
+                    <span class="cart-bubble" aria-live="polite">@ViewBag.CartCount</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* ── Category tabs ───────────────────────────────────────────────────────── *@
+<nav class="cat-bar" aria-label="Product categories">
+    @foreach (var cat in categories)
+    {
+        <a asp-action="Index"
+           asp-route-category="@cat.Value"
+           asp-route-search="@currentSearch"
+           asp-route-sort="@currentSort"
+           class="cat-btn @(currentCat == cat.Value ? "active" : "")"
+           aria-current="@(currentCat == cat.Value ? "page" : null)">
+            @cat.Label
+        </a>
+    }
+</nav>
+
+@* ── Toast ──────────────────────────────────────────────────────────────── *@
+@if (TempData["ToastMessage"] is string toastMsg)
+{
+    <div class="shop-toast" role="status" id="shopToast">@toastMsg</div>
+    <script>
+        setTimeout(function () {
+            var el = document.getElementById('shopToast');
+            if (el) { el.remove(); }
+        }, 2800);
+    </script>
+}
+
+@* ── Page body ──────────────────────────────────────────────────────────── *@
+<div class="container-fluid px-3 px-md-4 mt-3">
+    <div class="row g-3">
+
+        @* ── Sidebar ────────────────────────────────────────────────────── *@
+        <aside class="col-12 col-md-2">
+            <div class="filter-card">
+                <h5>Filters</h5>
+
+                <h6>Price Range</h6>
+                <input type="range" class="form-range" min="0" max="200000" value="200000"
+                       id="priceRange"
+                       oninput="document.getElementById('priceLabel').textContent =
+                                Number(this.value).toLocaleString('en-IN')" />
+                <small class="text-muted">Up to &#8377;<span id="priceLabel">2,00,000</span></small>
+
+                <h6 class="mt-3">Rating</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="r4" />
+                    <label class="form-check-label" for="r4">4&#9733; &amp; above</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="r3" />
+                    <label class="form-check-label" for="r3">3&#9733; &amp; above</label>
+                </div>
+
+                <h6 class="mt-3">Discount</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="d50" />
+                    <label class="form-check-label" for="d50">50% or more</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="d30" />
+                    <label class="form-check-label" for="d30">30% or more</label>
+                </div>
+            </div>
+        </aside>
+
+        @* ── Product grid ────────────────────────────────────────────────── *@
+        <main class="col-12 col-md-10">
+
+            @* Sort bar *@
+            <div class="sort-bar mb-3" role="toolbar" aria-label="Sort options">
+                <span>Sort By</span>
+                @foreach (var opt in sortOptions)
+                {
+                    <a asp-action="Index"
+                       asp-route-category="@currentCat"
+                       asp-route-search="@currentSearch"
+                       asp-route-sort="@opt.Value"
+                       class="sort-link @(currentSort == opt.Value ? "active" : "")"
+                       aria-current="@(currentSort == opt.Value ? "true" : null)">
+                        @opt.Label
+                    </a>
+                }
+            </div>
+
+            @if (!Model.Any())
+            {
+                <div class="empty-state" role="status">
+                    <span class="empty-state-icon">&#128722;</span>
+                    <h5>No products found</h5>
+                    <p>Try a different category or search term.</p>
+                </div>
+            }
+            else
+            {
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+                    @foreach (var product in Model)
+                    {
+                        <div class="col">
+                            <article class="product-card">
+
+                                @* Clicking the image area opens the detail modal *@
+                                <div class="card-img-wrap"
+                                     role="button"
+                                     tabindex="0"
+                                     aria-label="View details for @product.Name"
+                                     onclick="openDetail(@product.Id)"
+                                     onkeydown="if(event.key==='Enter') openDetail(@product.Id)">
+                                    @if (!string.IsNullOrEmpty(product.Badge))
+                                    {
+                                        <span class="card-badge-label">@product.Badge</span>
+                                    }
+                                    <img src="@product.ImageUrl"
+                                         alt="@product.Name"
+                                         loading="lazy"
+                                         onerror="this.src='https://via.placeholder.com/160x160?text=Product'" />
+                                    <span class="card-view-hint">&#128065; View Details</span>
+                                </div>
+
+                                @* Name, price, rating *@
+                                <div class="card-body-inner">
+                                    <div class="card-brand">@product.Brand</div>
+                                    <div class="card-title">@product.Name</div>
+
+                                    <div class="d-flex align-items-center gap-2 my-1 flex-wrap">
+                                        <span class="rating-pill @(product.Rating < 4 ? "low" : "")"
+                                              aria-label="@product.Rating out of 5">
+                                            &#9733; @product.Rating
+                                        </span>
+                                        <span class="review-count">(@product.ReviewCount.ToString("N0"))</span>
+                                        @if (product.IsNew) { <span class="new-tag">NEW</span> }
+                                    </div>
+
+                                    <div class="mt-auto">
+                                        <span class="price-now">&#8377;@product.Price.ToString("N0")</span>
+                                        <span class="price-off ms-1">@product.DiscountPercent% off</span>
+                                    </div>
+                                </div>
+
+                                @* Add to cart / Buy now *@
+                                <div class="p-2 d-flex gap-2">
+                                    <form asp-action="AddToCart" method="post" class="flex-fill">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="productId" value="@product.Id.ToString()" />
+                                        <input type="hidden" name="quantity"  value="1" />
+                                        <button type="submit" class="btn-add-cart">+ Cart</button>
+                                    </form>
+                                    <form asp-action="BuyNow" method="post" class="flex-fill">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="productId" value="@product.Id.ToString()" />
+                                        <button type="submit" class="btn-buy-now">Buy Now</button>
+                                    </form>
+                                </div>
+
+                            </article>
+                        </div>
+                    }
+                </div>
+            }
+
+        </main>
+    </div>
+</div>
+
+@* ── Product Detail Modal ────────────────────────────────────────────────── *@
+<div class="pd-backdrop" id="pdBackdrop" onclick="closeDetail()"></div>
+
+<div class="pd-modal" id="pdModal" role="dialog" aria-modal="true" aria-labelledby="pdTitle"
+     style="max-width:900px;width:96vw;">
+    <button class="pd-close" onclick="closeDetail()" aria-label="Close">&times;</button>
+
+    <div class="pd-body">
+        @* Left – image *@
+        <div class="pd-img-col">
+            <img id="pdImage" src="" alt="" />
+        </div>
+
+        @* Right – details *@
+        <div class="pd-info-col">
+            <span class="pd-badge-label" id="pdBadge"></span>
+            <p   class="pd-brand"        id="pdBrand"></p>
+            <h2  class="pd-name"         id="pdTitle"></h2>
+
+            <div class="pd-rating-row">
+                <span class="rating-pill" id="pdRating"></span>
+                <span class="review-count" id="pdReviews"></span>
+                <span class="new-tag d-none" id="pdNew">NEW</span>
+            </div>
+
+            <div class="pd-price-row">
+                <span class="pd-price"      id="pdPrice"></span>
+                <span class="price-original" id="pdOriginal"></span>
+                <span class="price-off"      id="pdDiscount"></span>
+            </div>
+
+            <p class="pd-category">Category: <strong id="pdCategory"></strong></p>
+
+            @* Actions inside the modal *@
+            <div class="pd-actions">
+                <form asp-action="AddToCart" method="post" id="pdCartForm">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="productId" id="pdCartId" value="" />
+                    <input type="hidden" name="quantity"  value="1" />
+                    <button type="submit" class="btn-add-cart">+ Add to Cart</button>
+                </form>
+                <form asp-action="BuyNow" method="post" id="pdBuyForm">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="productId" id="pdBuyId" value="" />
+                    <button type="submit" class="btn-buy-now">Buy Now</button>
+                </form>
+            </div>
+
+            @* ── Comments section ─────────────────────────────────────── *@
+            <div class="mt-3" id="commentsSection">
+                <h6 class="fw-bold mb-2">💬 Customer Reviews</h6>
+
+                <div id="commentsList"
+                     style="max-height:160px;overflow-y:auto;border:1px solid #e5e7eb;
+                            border-radius:6px;padding:8px;background:#f7f8fa;font-size:13px;">
+                    <span class="text-muted">Loading reviews…</span>
+                </div>
+
+                @{
+                    var loggedInUser = Context.Session.GetString("username");
+                }
+
+                @if (!string.IsNullOrEmpty(loggedInUser))
+                {
+                    <div class="mt-2 d-flex gap-2" id="commentForm">
+                        <input type="text" id="commentInput" class="form-control form-control-sm"
+                               placeholder="Write a review…" maxlength="500" />
+                        <button class="btn btn-sm btn-primary text-nowrap" onclick="postComment()">
+                            Post
+                        </button>
+                    </div>
+                    <div id="commentError" class="text-danger small mt-1" style="display:none"></div>
+                }
+                else
+                {
+                    <p class="small text-muted mt-2 mb-0">
+                        <a asp-controller="Account" asp-action="Login">Sign in</a> to leave a review.
+                    </p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+<script>
+    var detailsUrl   = '@Url.Action("Details", "Shop")';
+    var commentsBase = '@(ViewBag.GatewayUrl ?? "http://localhost:5020")';
+    var currentProductId = null;
+
+    function openDetail(productId) {
+        currentProductId = productId;
+        fetch(detailsUrl + '?id=' + productId)
+            .then(function (res) { return res.json(); })
+            .then(function (p) {
+                document.getElementById('pdImage').src             = p.imageUrl;
+                document.getElementById('pdImage').alt             = p.name;
+                document.getElementById('pdBrand').textContent     = p.brand;
+                document.getElementById('pdTitle').textContent     = p.name;
+                document.getElementById('pdCategory').textContent  = p.category;
+                document.getElementById('pdPrice').textContent     = '\u20B9' + p.price.toLocaleString('en-IN');
+                document.getElementById('pdOriginal').textContent  = '\u20B9' + p.originalPrice.toLocaleString('en-IN');
+                document.getElementById('pdDiscount').textContent  = p.discountPercent + '% off';
+                document.getElementById('pdRating').textContent    = '\u2605 ' + p.rating;
+                document.getElementById('pdRating').className      = 'rating-pill' + (p.rating < 4 ? ' low' : '');
+                document.getElementById('pdReviews').textContent   = '(' + p.reviewCount.toLocaleString() + ' reviews)';
+
+                var badge = document.getElementById('pdBadge');
+                badge.textContent   = p.badge || '';
+                badge.style.display = p.badge ? 'inline-block' : 'none';
+
+                document.getElementById('pdNew').classList.toggle('d-none', !p.isNew);
+                document.getElementById('pdCartId').value = p.id;
+                document.getElementById('pdBuyId').value  = p.id;
+
+                // clear comment input if present
+                var ci = document.getElementById('commentInput');
+                if (ci) ci.value = '';
+                var ce = document.getElementById('commentError');
+                if (ce) { ce.style.display = 'none'; ce.textContent = ''; }
+
+                loadComments(productId);
+
+                document.getElementById('pdBackdrop').classList.add('open');
+                document.getElementById('pdModal').classList.add('open');
+            });
+    }
+
+    function loadComments(productId) {
+        var list = document.getElementById('commentsList');
+        list.innerHTML = '<span class="text-muted">Loading…</span>';
+
+        fetch(commentsBase + '/api/Products/' + productId + '/comments')
+            .then(function (r) { return r.json(); })
+            .then(function (comments) {
+                if (!comments || comments.length === 0) {
+                    list.innerHTML = '<span class="text-muted">No reviews yet. Be the first!</span>';
+                    return;
+                }
+                list.innerHTML = comments.map(function (c) {
+                    var dt = new Date(c.createdUtc).toLocaleDateString('en-IN');
+                    return '<div style="border-bottom:1px solid #e5e7eb;padding:6px 0">' +
+                           '<strong>' + escHtml(c.username) + '</strong>' +
+                           '<span class="text-muted ms-2" style="font-size:11px">' + dt + '</span>' +
+                           '<div>' + escHtml(c.comment) + '</div></div>';
+                }).join('');
+            })
+            .catch(function () {
+                list.innerHTML = '<span class="text-muted">Could not load reviews.</span>';
+            });
+    }
+
+    function postComment() {
+        var input = document.getElementById('commentInput');
+        var errEl = document.getElementById('commentError');
+        var text  = (input ? input.value : '').trim();
+
+        if (!text) {
+            errEl.textContent   = 'Please enter a comment.';
+            errEl.style.display = 'block';
+            return;
+        }
+        errEl.style.display = 'none';
+
+        fetch(commentsBase + '/api/Products/' + currentProductId + '/comments', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer @(Context.Session.GetString("jwt_token") ?? "")'
+            },
+            body: JSON.stringify({ comment: text })
+        })
+        .then(function (r) {
+            if (r.ok) {
+                input.value = '';
+                loadComments(currentProductId);
+            } else {
+                return r.json().then(function (e) {
+                    errEl.textContent   = e.error || 'Could not post comment.';
+                    errEl.style.display = 'block';
+                });
+            }
+        })
+        .catch(function () {
+            errEl.textContent   = 'Network error. Please try again.';
+            errEl.style.display = 'block';
+        });
+    }
+
+    function closeDetail() {
+        document.getElementById('pdBackdrop').classList.remove('open');
+        document.getElementById('pdModal').classList.remove('open');
+        currentProductId = null;
+    }
+
+    function escHtml(str) {
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') { closeDetail(); }
+    });
+</script>
+}
