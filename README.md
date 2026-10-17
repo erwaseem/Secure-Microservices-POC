@@ -43,6 +43,14 @@ The application includes product catalogue management, shopping cart operations,
                NotificationService
                   .NET Worker
 ```
+```mermaid
+flowchart TD
+    Browser["Browser"] --> UI["MVC Razor"]
+    UI --> Gateway["YARP API Gateway"]
+    Gateway --> Auth["Auth Service"]
+    Gateway --> Product["Product Service"]
+    Gateway --> Cart["Cart Service"]
+```
 
 **Key architectural principle:** The UI never calls a microservice directly. All HTTP requests go through the YARP API Gateway.
 
