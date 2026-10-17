@@ -52,6 +52,51 @@ flowchart TD
     Gateway --> Cart["Cart Service"]
 ```
 
+
+## System Architecture
+
+This diagram illustrates the secure e-commerce microservices architecture using ASP.NET Core, YARP API Gateway, JWT authentication, RabbitMQ, and SQL Server.
+
+```mermaid
+flowchart TD
+    Browser["🌐 Browser"]
+    UI["UI - MVC Razor<br/>Port 5000"]
+    Gateway["API Gateway<br/>YARP + JWT + Rate Limiting<br/>Port 5020"]
+
+    Auth["Auth-Service<br/>Port 5001"]
+    Product["ProductService<br/>Port 5138"]
+    Cart["Cart-Service<br/>Port 5164"]
+
+    AuthDB[("SecureAuthDb<br/>SQL Server")]
+    ProductDB[("SecureProductDb<br/>SQL Server")]
+    CartDB[("CartServiceDb<br/>SQL Server")]
+
+    RabbitMQ["🐇 RabbitMQ"]
+    Notification["NotificationService<br/>Background Worker"]
+
+    Browser --> UI
+    UI --> Gateway
+
+    Gateway --> Auth
+    Gateway --> Product
+    Gateway --> Cart
+
+    Auth --> AuthDB
+    Product --> ProductDB
+    Cart --> CartDB
+
+    Auth -.-> RabbitMQ
+    Product --> RabbitMQ
+    Cart --> RabbitMQ
+
+    RabbitMQ --> Notification
+
+    classDef app fill:#eeebff,stroke:#8b5cf6,color:#333
+    classDef database fill:#f3edff,stroke:#8b5cf6,color:#333
+    class Browser,UI,Gateway,Auth,Product,Cart,RabbitMQ,Notification app
+    class AuthDB,ProductDB,CartDB database
+```
+
 **Key architectural principle:** The UI never calls a microservice directly. All HTTP requests go through the YARP API Gateway.
 
 ## 🛠️ Technology Stack
